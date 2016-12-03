@@ -1,0 +1,23 @@
+version: "2"
+
+services:
+  # constructor:
+
+  server:
+    build: .
+    image: site-mapper
+    depends_on:
+      - database
+    volumes:
+      # Mount local
+      - .:/sitemapper
+      - server_modules:/sitemapper/node_modules
+      - server_bower:/sitemapper/bower_components
+    ports:
+      - 3000:3000
+  database:
+    image: mongo
+
+volumes:
+  server_modules:
+  server_bower:

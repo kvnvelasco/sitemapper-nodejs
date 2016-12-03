@@ -5,6 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node web/index.js",
+    "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,7 +27,7 @@
     "del": "^2.0.2",
     "express": "~4.13.1",
     "file-stream-rotator": "0.0.6",
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-minify-css": "^1.2.1",
     "gulp-rename": "^1.2.2",
@@ -39,6 +41,7 @@
     "mongoose": "^4.1.8",
     "morgan": "^1.6.1",
     "nconf": "^0.8.0",
+    "pm2": "^2.1.6",
     "request": "^2.62.0",
     "requestretry": "^1.5.0",
     "robots": "^0.9.4",

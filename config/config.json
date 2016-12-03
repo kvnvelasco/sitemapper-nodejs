@@ -1,6 +1,6 @@
 {
   "siteDatabase": {
-    "uri": "mongodb://localhost/sitemapper",
+    "uri": "mongodb://database/sitemapper",
     "options": {
       "server": {
         "socketOptions": {
