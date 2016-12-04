@@ -9,7 +9,7 @@ RUN yarn
 RUN bower install --allow-root
 
 # Build the services initially
-# RUN npm run build
+RUN npm run build
 
 # Start the server
 CMD npm start

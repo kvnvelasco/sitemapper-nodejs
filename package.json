@@ -5,7 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node web/index.js",
+    "kill": "pm2 stop",
+    "start": "pm2 start web/index.js && pm2 logs",
     "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -48,7 +49,6 @@
     "run-sequence": "^1.1.4",
     "serve-favicon": "~2.3.0",
     "swig": "^1.4.2",
-    "url": "^0.11.0",
     "validator": "^4.0.6",
     "winston": "^1.0.2"
   }

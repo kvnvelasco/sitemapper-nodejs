@@ -2,6 +2,7 @@
 web/public_dist
 web/public_dist_temp
 
+
 # WebStorm files
 .idea/workspace.xml
 
@@ -32,6 +33,7 @@ build/Release
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
 node_modules
+web/public/components
 
 # Debug log from npm
 npm-debug.log
